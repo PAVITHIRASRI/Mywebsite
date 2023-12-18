@@ -11,7 +11,13 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #eff4fd;
+    background: linear-gradient(
+        to right,
+        #eff4fd 0%,
+        #eff4fd 55%,
+        beige 55%,
+        beige 100%
+    );
 }
 
 nav{
@@ -39,7 +45,7 @@ nav ul li a:hover{
 
 .detail{
     margin-left: 8%;
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 .detail h1{
@@ -52,7 +58,7 @@ span{
     color: brown;
 }
 
-.detel p{
+.detail p{
     color: #555;
     line-height: 22px;
 }
@@ -69,20 +75,23 @@ span{
 } */
 
 .images {
-    width: 50%;
-    height: 60%;
+    width: 60%;
+    height: 100%;
     position: absolute;
-    bottom: 100px;
-    right: 50px;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-55%);
+    transition: bottom 1s left 1s;
 }
 
 .images img{
-    height: 100%;
+    width: 50%;
+    height: 60%;
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s left 1s;
+    left: 60%;
+    bottom: 100px;
+    right: 20px;
+    box-shadow: 10px 10px 20px grey;
 }
 
 
