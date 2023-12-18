@@ -104,6 +104,8 @@ span{
 }
 
 footer{
+    text-align: center;
+    justify-content: center;
     background: linear-gradient(
         to right,
         #eff4fd 0%,
@@ -113,11 +115,15 @@ footer{
     );
 }
 
-.copyright {
+.copyright .contact .badge{
     text-align: center;
     justify-content: center;
     color: #555;
     line-height: 22px;
+}
+
+a.badge{
+    text-decoration: none;
 }
 
 
